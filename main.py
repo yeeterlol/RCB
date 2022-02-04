@@ -4,6 +4,22 @@ import string
 import threading
 # Webhook Settings | WIP
 webhook = ""
+data = {
+  "content": "@everyone Realm code found!",
+  "embeds": [
+    {
+      "title": "Realm Code Bruteforcer",
+      "description": "It has found a code (), enjoy \ngriefing this realm!",
+      "color": 2112716,
+      "author": {
+        "name": "Developed by yeeterlol",
+        "url": "https://github.com/yeeterlol/RCB",
+        "icon_url": "https://avatars.githubusercontent.com/u/81702700?v=4"
+      }
+    }
+  ],
+  "username": "RCB"
+}
 
 def SendRequest():
   while True:
