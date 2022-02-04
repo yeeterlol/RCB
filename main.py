@@ -2,6 +2,8 @@ import requests
 import random
 import string
 import threading
+# Webhook Settings | WIP
+webhook = ""
 
 def SendRequest():
   while True:
@@ -10,7 +12,7 @@ def SendRequest():
         generated = ''.join(random.choice(letters) for i in range(11)) 
         link = f"https://open.minecraft.net/pocket/realms/invite/{generated}"
         r = requests.get(link)
-
+        # Checks status code
         if r.status_code == 404:
             print(f"Invalid | {link}")
         elif r.status_code == 200:
