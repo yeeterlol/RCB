@@ -15,7 +15,6 @@ def SendRequest():
             print(f"Invalid | {link}")
         elif r.status_code == 200:
             print(f"Valid | {link}")
-            requests.post(webhook, json = data)
         else:
             print(f"Error | {link}")
 
