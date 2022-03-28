@@ -3,7 +3,5 @@
   <img alt="Brute-Force" src="https://img.shields.io/badge/Brute-Force-red?style=for-the-badge" />
   
 </p>
+> A brute forcer for Minecraft: Bedrock Edition realm codes
 
-<p>
-  A brute forcer for Minecraft: Bedrock Edition realm codes
-</p>
